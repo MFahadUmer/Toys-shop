@@ -37,7 +37,7 @@
     <title>Toys Online Shop</title>
   </head>
   <body>
-    <main class="mx-auto px-2">
+    <main class="main-width mx-auto px-2">
       <div class="container-fluid bg-white p-0">
         <nav class="p-3 mx-auto d-flex justify-content-between p-0">
           <div>
@@ -50,23 +50,33 @@
               <i class="fa fa-home nav-icons"></i>
               <a class="links" href="index.html">HOME</a>
             </div>
-            <div class="pl-3 main-links">
+            <div class="pl-1 main-links">
               <i class="fa fa-columns nav-icons"></i>
               <a class="links" href="about.html">ABOUT</a>
             </div>
-            <div class="pl-3 main-links">
-              <i class="fa fa-shopping-cart nav-icons"></i>
-              <a class="links" href="#">CHECKOUT</a>
+            <div class="pl-1 main-links">
+              <i class="fa fa-search nav-icons"></i>
+              <a class="links" href="search-result.html">SEARCH RESULT</a>
             </div>
             <div>
               <button class="nav-button" type="submit">POST AN AD</button>
             </div>
           </div>
-          <div class="justify-content-between align-items-center main-links">
-            <i class="material-icons nav-icons">email</i>
-            <a class="links" href="mailto:eng.fahadumer@gmail.com"
-              >Eng.fahadumer@gmail.com</a
-            >
+          <div class="nav-profile">
+            <div class="main-email">
+              <a href="#"><i class="material-icons nav-icons">email</i></a>
+              <a class="links" href="mailto:eng.fahadumer@gmail.com"
+                >Muhammad Fahad</a
+              >
+            </div>
+            <div>
+              <a href="#"
+                ><img
+                  class="profile-image"
+                  src="images/blacnk-person.jpeg"
+                  alt="#"
+              /></a>
+            </div>
           </div>
           <div class="collpase-icon">
             <a href="#"> <i class="fa fa-bars"></i></a>
@@ -74,27 +84,59 @@
         </nav>
         <div class="search">
           <div class="d-flex search-box justify-content-center">
-            <form class="d-flex justify-content-center" action="search-result.html">
-              <button class="categories-button">
-                categories
+            <form
+              class="d-flex justify-content-center"
+              action="search-result.html"
+            >
+              <div class="categories-button">
+                <p class="categories-button-p">
+                  <i class="fa fa-caret-down"></i> Categories
+                </p>
                 <div class="categories">
                   <ul class="category-ul">
-                    <li class="category-li"><a class="category-link" href="#">Cars</a></li>
-                    <li class="category-li"><a class="category-link" href="#">Dolls</a></li>
-                    <li class="category-li"><a class="category-link" href="#">Creative</a></li>
-                    <li class="category-li"><a class="category-link" href="#">Contructive</a></li>
-                    <li class="category-li"><a class="category-link" href="#">Characters</a></li>
-                    <li class="category-li"><a class="category-link" href="#">Scientific</a></li>
+                    <li class="category-li">
+                      <a class="category-link" href="#">Cars</a>
+                    </li>
+                    <li class="category-li">
+                      <a class="category-link" href="#">Dolls</a>
+                    </li>
+                    <li class="category-li">
+                      <a class="category-link" href="#">Creative</a>
+                    </li>
+                    <li class="category-li">
+                      <a class="category-link" href="#">Contructive</a>
+                    </li>
+                    <li class="category-li">
+                      <a class="category-link" href="#">Characters</a>
+                    </li>
+                    <li class="category-li">
+                      <a class="category-link" href="#">Scientific</a>
+                    </li>
                   </ul>
                 </div>
-              </button> 
-              <input class="ml-2 search-input" type="text" name="products" placeholder="Search for products">   
-              <input class="ml-2 search-input" type="text" name="location" placeholder="Location">
-              <button class="nav-button ml-2 px-5" type="submit"><span><i class="fa fa-search"></i></span> Search</button>   
+              </div>
+              <input
+                class="ml-2 search-input"
+                type="text"
+                name="products"
+                placeholder="Search for products"
+              />
+              <input
+                class="ml-2 search-input"
+                type="text"
+                name="location"
+                placeholder="Location"
+              />
+              <button class="nav-button ml-2 px-2" type="submit">
+                <span><i class="fa fa-search"></i></span> Search
+              </button>
             </form>
           </div>
         </div>
-
+        <div class="ads-container mx-5">
+          <h1 class="ads">Hot Ads</h1>
+        </div>
+        <hr class="m-0 p-0" />
         <div class="slider-container">
           <div
             id="carouselExampleControls"
@@ -223,433 +265,445 @@
         </div>
 
         <!-- products section  -->
-        <section class="products-container">
-          <div class="d-flex align-items-center p-3">
-            <span><i class="fas fa-car-side"></i></span>
-            <h2 class="category-name pl-2">Cars</h2>
-          </div>
-          <div class="products-category">
-            <div class="products-sidebar">
-              <i class="fa fa-angle-left"></i>
+        <div class="products-container">
+          <section>
+            <div class="d-flex align-items-center p-3">
+              <span><i class="fas fa-car-side"></i></span>
+              <h2 class="category-name pl-2">Cars</h2>
             </div>
-            <div class="products">
-              <div class="card">
-                <img class="card-img-top" src="images/cars-1.jpeg" alt="#" />
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a class="product-title" href="#"> Kids Electric Jeep</a>
-                  </h3>
-                  <h5 class="c1ondition">NEW</h5>
-                  <p class="card-text">
-                    From: ABC Store, Pakistan
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <button
-                      class="nav-button px-4 py-1 add-to-cart"
-                      type="submit"
+            <div class="products-category">
+              <div class="products-sidebar">
+                <i class="fa fa-angle-left"></i>
+              </div>
+              <div class="products">
+                <div class="card">
+                  <img class="card-img-top" src="images/cars-1.jpeg" alt="#" />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a class="product-title" href="#"> Kids Electric Jeep</a>
+                    </h3>
+                    <h5 class="c1ondition">NEW</h5>
+                    <p class="card-text">
+                      From: ABC Store, Pakistan
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      +
-                    </button>
-                    <h5 class="price">450$</h5>
+                      <button
+                        class="nav-button px-4 py-1 add-to-cart"
+                        type="submit"
+                      >
+                        +
+                      </button>
+                      <h5 class="price">450$</h5>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="products">
-              <div class="card">
-                <img class="card-img-top" src="images/cars-2.jpeg" alt="#" />
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a class="product-title" href="#"> Kids Electric Jeep</a>
-                  </h3>
-                  <h5 class="Condition">NEW</h5>
-                  <p class="card-text">
-                    From: ABC Store, Pakistan
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <button
-                      class="nav-button px-4 py-1 add-to-cart"
-                      type="submit"
+              <div class="products">
+                <div class="card">
+                  <img class="card-img-top" src="images/cars-2.jpeg" alt="#" />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a class="product-title" href="#"> Kids Electric Jeep</a>
+                    </h3>
+                    <h5 class="Condition">NEW</h5>
+                    <p class="card-text">
+                      From: ABC Store, Pakistan
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      +
-                    </button>
-                    <h5 class="price">450$</h5>
+                      <button
+                        class="nav-button px-4 py-1 add-to-cart"
+                        type="submit"
+                      >
+                        +
+                      </button>
+                      <h5 class="price">450$</h5>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="products">
-              <div class="card">
-                <img class="card-img-top" src="images/cars-3.jpeg" alt="#" />
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a class="product-title" href="#"> Kids Electric Jeep</a>
-                  </h3>
-                  <h5 class="Condition">NEW</h5>
-                  <p class="card-text">
-                    From: ABC Store, Pakistan
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <button
-                      class="nav-button px-4 py-1 add-to-cart"
-                      type="submit"
+              <div class="products">
+                <div class="card">
+                  <img class="card-img-top" src="images/cars-3.jpeg" alt="#" />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a class="product-title" href="#"> Kids Electric Jeep</a>
+                    </h3>
+                    <h5 class="Condition">NEW</h5>
+                    <p class="card-text">
+                      From: ABC Store, Pakistan
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      +
-                    </button>
-                    <h5 class="price">450$</h5>
+                      <button
+                        class="nav-button px-4 py-1 add-to-cart"
+                        type="submit"
+                      >
+                        +
+                      </button>
+                      <h5 class="price">450$</h5>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="products">
-              <div class="card">
-                <img class="card-img-top" src="images/cars-4.jpeg" alt="#" />
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a class="product-title" href="#"> Kids Electric Jeep</a>
-                  </h3>
-                  <h5 class="Condition">NEW</h5>
-                  <p class="card-text">
-                    From: ABC Store, Pakistan
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <button
-                      class="nav-button px-4 py-1 add-to-cart"
-                      type="submit"
+              <div class="products">
+                <div class="card">
+                  <img class="card-img-top" src="images/cars-4.jpeg" alt="#" />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a class="product-title" href="#"> Kids Electric Jeep</a>
+                    </h3>
+                    <h5 class="Condition">NEW</h5>
+                    <p class="card-text">
+                      From: ABC Store, Pakistan
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      +
-                    </button>
-                    <h5 class="price">450$</h5>
+                      <button
+                        class="nav-button px-4 py-1 add-to-cart"
+                        type="submit"
+                      >
+                        +
+                      </button>
+                      <h5 class="price">450$</h5>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="products-sidebar">
-              <i class="fa fa-angle-right"></i>
+              <div class="products-sidebar">
+                <i class="fa fa-angle-right"></i>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section class="products-container">
-          <div class="d-flex align-items-center p-3">
-            <span><i class="fas fa-user-astronaut"></i></span>
-            <h2 class="category-name pl-2">Cartoon Character</h2>
-          </div>
-          <div class="products-category">
-            <div class="products-sidebar">
-              <i class="fa fa-angle-left"></i>
+          <section>
+            <div class="d-flex align-items-center p-3">
+              <span><i class="fas fa-user-astronaut"></i></span>
+              <h2 class="category-name pl-2">Cartoon Character</h2>
             </div>
-            <div class="products">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="images/character-1.jpg"
-                  alt="#"
-                />
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a class="product-title" href="#"> Kids Electric Jeep</a>
-                  </h3>
-                  <h5 class="Condition">NEW</h5>
-                  <p class="card-text">
-                    From: ABC Store, Pakistan
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <button
-                      class="nav-button px-4 py-1 add-to-cart"
-                      type="submit"
+            <div class="products-category">
+              <div class="products-sidebar">
+                <i class="fa fa-angle-left"></i>
+              </div>
+              <div class="products">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="images/character-1.jpg"
+                    alt="#"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a class="product-title" href="#"> Kids Electric Jeep</a>
+                    </h3>
+                    <h5 class="Condition">NEW</h5>
+                    <p class="card-text">
+                      From: ABC Store, Pakistan
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      +
-                    </button>
-                    <h5 class="price">450$</h5>
+                      <button
+                        class="nav-button px-4 py-1 add-to-cart"
+                        type="submit"
+                      >
+                        +
+                      </button>
+                      <h5 class="price">450$</h5>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="products">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="images/character-2.jpg"
-                  alt="#"
-                />
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a class="product-title" href="#"> Kids Electric Jeep</a>
-                  </h3>
-                  <h5 class="Condition">NEW</h5>
-                  <p class="card-text">
-                    From: ABC Store, Pakistan
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <button
-                      class="nav-button px-4 py-1 add-to-cart"
-                      type="submit"
+              <div class="products">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="images/character-2.jpg"
+                    alt="#"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a class="product-title" href="#"> Kids Electric Jeep</a>
+                    </h3>
+                    <h5 class="Condition">NEW</h5>
+                    <p class="card-text">
+                      From: ABC Store, Pakistan
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      +
-                    </button>
-                    <h5 class="price">450$</h5>
+                      <button
+                        class="nav-button px-4 py-1 add-to-cart"
+                        type="submit"
+                      >
+                        +
+                      </button>
+                      <h5 class="price">450$</h5>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="products">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="images/character-3.jpg"
-                  alt="#"
-                />
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a class="product-title" href="#"> Kids Electric Jeep</a>
-                  </h3>
-                  <h5 class="Condition">NEW</h5>
-                  <p class="card-text">
-                    From: ABC Store, Pakistan
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <button
-                      class="nav-button px-4 py-1 add-to-cart"
-                      type="submit"
+              <div class="products">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="images/character-3.jpg"
+                    alt="#"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a class="product-title" href="#"> Kids Electric Jeep</a>
+                    </h3>
+                    <h5 class="Condition">NEW</h5>
+                    <p class="card-text">
+                      From: ABC Store, Pakistan
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      +
-                    </button>
-                    <h5 class="price">450$</h5>
+                      <button
+                        class="nav-button px-4 py-1 add-to-cart"
+                        type="submit"
+                      >
+                        +
+                      </button>
+                      <h5 class="price">450$</h5>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="products">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="images/character-4.jpg"
-                  alt="#"
-                />
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a class="product-title" href="#"> Kids Electric Jeep</a>
-                  </h3>
-                  <h5 class="Condition">NEW</h5>
-                  <p class="card-text">
-                    From: ABC Store, Pakistan
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <button
-                      class="nav-button px-4 py-1 add-to-cart"
-                      type="submit"
+              <div class="products">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="images/character-4.jpg"
+                    alt="#"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a class="product-title" href="#"> Kids Electric Jeep</a>
+                    </h3>
+                    <h5 class="Condition">NEW</h5>
+                    <p class="card-text">
+                      From: ABC Store, Pakistan
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      +
-                    </button>
-                    <h5 class="price">450$</h5>
+                      <button
+                        class="nav-button px-4 py-1 add-to-cart"
+                        type="submit"
+                      >
+                        +
+                      </button>
+                      <h5 class="price">450$</h5>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="products-sidebar">
-              <i class="fa fa-angle-right"></i>
+              <div class="products-sidebar">
+                <i class="fa fa-angle-right"></i>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section class="products-container">
-          <div class="d-flex align-items-center p-3">
-            <span><i class="fas fa-user-astronaut"></i></span>
-            <h2 class="category-name pl-2">Barbie Dolls</h2>
-          </div>
-          <div class="products-category">
-            <div class="products-sidebar">
-              <i class="fa fa-angle-left"></i>
+          <section>
+            <div class="d-flex align-items-center p-3">
+              <span><i class="fas fa-user-astronaut"></i></span>
+              <h2 class="category-name pl-2">Barbie Dolls</h2>
             </div>
-            <div class="products">
-              <div class="card">
-                <img class="card-img-top" src="images/dolls-1.jpg" alt="#" />
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a class="product-title" href="#"> Kids Electric Jeep</a>
-                  </h3>
-                  <h5 class="Condition">NEW</h5>
-                  <p class="card-text">
-                    From: ABC Store, Pakistan
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <button
-                      class="nav-button px-4 py-1 add-to-cart"
-                      type="submit"
+            <div class="products-category">
+              <div class="products-sidebar">
+                <i class="fa fa-angle-left"></i>
+              </div>
+              <div class="products">
+                <div class="card">
+                  <img class="card-img-top" src="images/dolls-1.jpg" alt="#" />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a class="product-title" href="#"> Kids Electric Jeep</a>
+                    </h3>
+                    <h5 class="Condition">NEW</h5>
+                    <p class="card-text">
+                      From: ABC Store, Pakistan
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      +
-                    </button>
-                    <h5 class="price">450$</h5>
+                      <button
+                        class="nav-button px-4 py-1 add-to-cart"
+                        type="submit"
+                      >
+                        +
+                      </button>
+                      <h5 class="price">450$</h5>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="products">
-              <div class="card">
-                <img class="card-img-top" src="images/dolls-2.jpg" alt="#" />
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a class="product-title" href="#"> Kids Electric Jeep</a>
-                  </h3>
-                  <h5 class="Condition">NEW</h5>
-                  <p class="card-text">
-                    From: ABC Store, Pakistan
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <button
-                      class="nav-button px-4 py-1 add-to-cart"
-                      type="submit"
+              <div class="products">
+                <div class="card">
+                  <img class="card-img-top" src="images/dolls-2.jpg" alt="#" />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a class="product-title" href="#"> Kids Electric Jeep</a>
+                    </h3>
+                    <h5 class="Condition">NEW</h5>
+                    <p class="card-text">
+                      From: ABC Store, Pakistan
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      +
-                    </button>
-                    <h5 class="price">450$</h5>
+                      <button
+                        class="nav-button px-4 py-1 add-to-cart"
+                        type="submit"
+                      >
+                        +
+                      </button>
+                      <h5 class="price">450$</h5>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="products">
-              <div class="card">
-                <img class="card-img-top" src="images/dolls-3.jpg" alt="#" />
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a class="product-title" href="#"> Kids Electric Jeep</a>
-                  </h3>
-                  <h5 class="Condition">NEW</h5>
-                  <p class="card-text">
-                    From: ABC Store, Pakistan
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <button
-                      class="nav-button px-4 py-1 add-to-cart"
-                      type="submit"
+              <div class="products">
+                <div class="card">
+                  <img class="card-img-top" src="images/dolls-3.jpg" alt="#" />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a class="product-title" href="#"> Kids Electric Jeep</a>
+                    </h3>
+                    <h5 class="Condition">NEW</h5>
+                    <p class="card-text">
+                      From: ABC Store, Pakistan
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      +
-                    </button>
-                    <h5 class="price">450$</h5>
+                      <button
+                        class="nav-button px-4 py-1 add-to-cart"
+                        type="submit"
+                      >
+                        +
+                      </button>
+                      <h5 class="price">450$</h5>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="products">
-              <div class="card">
-                <img class="card-img-top" src="images/dolls-4.jpg" alt="#" />
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a class="product-title" href="#"> Kids Electric Jeep</a>
-                  </h3>
-                  <h5 class="Condition">NEW</h5>
-                  <p class="card-text">
-                    From: ABC Store, Pakistan
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <button
-                      class="nav-button px-4 py-1 add-to-cart"
-                      type="submit"
+              <div class="products">
+                <div class="card">
+                  <img class="card-img-top" src="images/dolls-4.jpg" alt="#" />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a class="product-title" href="#"> Kids Electric Jeep</a>
+                    </h3>
+                    <h5 class="Condition">NEW</h5>
+                    <p class="card-text">
+                      From: ABC Store, Pakistan
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      +
-                    </button>
-                    <h5 class="price">450$</h5>
+                      <button
+                        class="nav-button px-4 py-1 add-to-cart"
+                        type="submit"
+                      >
+                        +
+                      </button>
+                      <h5 class="price">450$</h5>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="products-sidebar">
-              <i class="fa fa-angle-right"></i>
+              <div class="products-sidebar">
+                <i class="fa fa-angle-right"></i>
+              </div>
             </div>
-          </div>
-        </section>
-
-        <div class="footer-navigation px-4 mt-3 pt-3">
-          <div class="contact-us">
-            <p class="footer-nav-p">
-              Multan <br />
-              Punjab , Pakistan
-            </p>
-            <p class="footer-nav-p">ZIP Code 61200</p>
-          </div>
-          <div class="help">
-            <ul class="footer-ul">
-              <li class="footer-li d-flex flex-column">
-                <a href="#" class="footer-li-link">FAQ</a>
-                <a href="#" class="footer-li-link">Newsletter</a>
-                <a href="#" class="footer-li-link">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="help">
-            <ul class="footer-ul">
-              <li class="footer-li d-flex flex-column">
-                <a href="#" class="footer-li-link">Contact Us</a>
-                <a href="#" class="footer-li-link">Jobs Opputunities</a>
-                <a href="#" class="footer-li-link">Privacy Policy</a>
-                <a href="#" class="footer-li-link">Terms & Conditions</a>
-              </li>
-            </ul>
-          </div>
-          <div class="help">
-            <ul class="footer-ul">
-              <li class="footer-li d-flex flex-column">
-                <a href="#" class="footer-li-link"
-                  ><i class="fab fa-facebook-square"></i> &nbsp; Facebook</a
-                >
-                <a href="#" class="footer-li-link"
-                  ><i class="fab fa-twitter-square"></i>&nbsp; Twitter</a
-                >
-                <a href="#" class="footer-li-link"
-                  ><i class="fab fa-linkedin"></i>&nbsp; Linkedin</a
-                >
-                <a href="#" class="footer-li-link"
-                  ><i class="fab fa-github-square"></i>&nbsp; Github</a
-                >
-                <a href="#" class="footer-li-link"
-                  ><i class="fab fa-instagram-square"></i>&nbsp; Instagram</a
-                >
-                <a href="#" class="footer-li-link"
-                  ><i class="fab fa-tumblr-square"></i>&nbsp; Tumbler</a
-                >
-              </li>
-            </ul>
-          </div>
+          </section>
         </div>
-        <footer class="copyright text-center">
-          Copyright @ 2020. All rights reserved by Muhammad-Tech.
+
+        <footer>
+          <div class="footer-navigation px-4 mt-3 pt-3">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <a href="#"
+                ><img class="footer-logo" src="images/logo.jpeg" alt="#"
+              /></a>
+              <p class="text-left pt-2 footer-paragraph">
+                A toy is an item that is used in play, especially one designed
+                for such use. Playing with toys can be an enjoyable means of
+                training young children for life in society.
+              </p>
+            </div>
+            <div>
+              <h5 class="footer-navigation-title">Categories</h5>
+              <hr class="footer-hr" />
+              <div class="footer-naviagtion-grid">
+                <div class="help">
+                  <ul class="footer-ul">
+                    <li class="footer-li d-flex flex-column">
+                      <a href="#" class="footer-li-link">FAQ</a>
+                      <a href="#" class="footer-li-link">Newsletter</a>
+                      <a href="#" class="footer-li-link">Contact Us</a>
+                      <a href="#" class="footer-li-link">Contact Us</a>
+                      <a href="#" class="footer-li-link">Jobs Opputunities</a>
+                      <a href="#" class="footer-li-link">Privacy Policy</a>
+                      <a href="#" class="footer-li-link">Terms & Conditions</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="help">
+                  <ul class="footer-ul">
+                    <li class="footer-li d-flex flex-column">
+                      <a href="#" class="footer-li-link"
+                        ><i class="fab fa-facebook-square"></i>&nbsp;
+                        Facebook</a
+                      >
+                      <a href="#" class="footer-li-link"
+                        ><i class="fab fa-twitter-square"></i>&nbsp; Twitter</a
+                      >
+                      <a href="#" class="footer-li-link"
+                        ><i class="fab fa-linkedin"></i>&nbsp; Linkedin</a
+                      >
+                      <a href="#" class="footer-li-link"
+                        ><i class="fab fa-github-square"></i>&nbsp; Github</a
+                      >
+                      <a href="#" class="footer-li-link"
+                        ><i class="fab fa-instagram-square"></i>&nbsp;
+                        Instagram</a
+                      >
+                      <a href="#" class="footer-li-link"
+                        ><i class="fab fa-tumblr-square"></i>&nbsp; Tumbler</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="mx-4" />
+          <div class="footer copyright text-center">
+            Copyright @ 2020. All rights reserved by Muhammad-Tech.
+          </div>
         </footer>
       </div>
     </main>

@@ -1,7 +1,6 @@
 # Project Name
 
-> Capstone Project. This is a project based on a Glance design . for this project ive to create an online shop for the products of our own choice. so that I've created a website for Toys online shop.
- In this project I used all the previous knowledge like bootstrap, flex box, grid, float, position. ive also used the bakground image for search section. This website is responsive for 2 devices not for extra small devices.
+> Capstone Project. This is a project based on a Glance design . For this project ive to create an online shop for the products of our own choice. So, I've created a website for Toys online shop. In this project I used all the previous knowledge like bootstrap, flex box, grid, float, position. ive also used the bakground image for search section. This website is responsive.
 
 ![screenshot](./tos-1.png)
 ![screenshot](./tos-2.png)
@@ -12,12 +11,22 @@
 ![screenshot](./tos-7.png)
 
 Additional description about the project and its features.
+- A sticky navbar
+- Search box with background image
+- Products Section
+- Footer
+- Search Results Page
+- Filter Section
 
 ## Built With
 
 - HTML
 - CSS
 - BOOTSTRAP
+- Flexbox
+- Grid
+- Position
+- Media Queries
 
 ## Live Demo
 
@@ -31,7 +40,7 @@ Additional description about the project and its features.
 To get a local copy up and running follow these simple example steps.
 
 ### Download Repository (git@github.com:MFahadUmer/Capstone-Project.git)
-### cd <folder>
+### cd online-shop
 ### run the index.html file
 
 
@@ -56,5 +65,5 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
+- Special thanks to Microverse (microverse.org) who help me to complete this design and also to Muhammad Awad (https://www.behance.net) whose design i've used.
 - etc
