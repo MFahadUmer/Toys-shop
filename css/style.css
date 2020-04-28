@@ -117,11 +117,16 @@ header {
 }
 
 .nav-button {
-  border: #888 1px solid;
-  background-color: white;
-  color: #888;
+  background-color: #d35266;
+  color: white;
   padding: 7px 7px;
   border-radius: 2px;
+  border: none;
+  font-weight: bold;
+}
+
+.nav-button:hover{
+  background-color: #a7404f;
 }
 
 .search {
@@ -212,6 +217,7 @@ header {
 }
 
 .category-name {
+  font-size: 24px;
   color: #d35266;
 }
 
@@ -222,6 +228,7 @@ header {
 }
 
 .product-title {
+  font-size: 20px;
   color: #d35266;
 }
 
@@ -242,6 +249,15 @@ header {
 .add-to-cart {
   font-size: 24px;
   font-weight: bold;
+  color: #888;
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid #888;
+}
+
+.add-to-cart:hover {
+  background-color: #383838;
+  color: #d35266;
 }
 
 .main-links,
@@ -358,6 +374,7 @@ header {
 
 .price,
 .product-name {
+  font-size: 22px;
   color: #d35266;
   text-decoration: none;
 }
