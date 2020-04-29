@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- icons links  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- fonts icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon" />
+    <title>Toys Online Shop</title>
+  </head>
+  <body>
+    <main class="main-width mx-auto px-2">
+      <div class="container-fluid bg-white p-0">
+        <nav class="p-3 mx-auto d-flex justify-content-between p-0">
+          <div>
+            <a href="index.html"
+              ><img class="logo-image" src="images/logo.jpeg" alt="#"
+            /></a>
+          </div>
+          <div class="justify-content-between align-items-center main-links">
+            <div class="main-links">
+              <i class="fa fa-home nav-icons"></i>
+              <a class="links" href="index.html">HOME</a>
+            </div>
+            <div class="pl-1 main-links">
+              <i class="fa fa-columns nav-icons"></i>
+              <a class="links" href="about.html">ABOUT</a>
+            </div>
+            <div class="pl-1 main-links">
+              <i class="fa fa-search nav-icons"></i>
+              <a class="links" href="search-result.html">SEARCH RESULT</a>
+            </div>
+            <div>
+              <button class="nav-button" type="submit">POST AN AD</button>
+            </div>
+          </div>
+          <div class="nav-profile">
+            <div class="main-email">
+              <a href="#"><i class="material-icons nav-icons">email</i></a>
+              <a class="links" href="mailto:eng.fahadumer@gmail.com"
+                >Muhammad Fahad</a
+              >
+            </div>
+            <div>
+              <a href="#"
+                ><img
+                  class="profile-image"
+                  src="images/blacnk-person.jpeg"
+                  alt="#"
+              /></a>
+            </div>
+          </div>
+          <div class="collpase-icon">
+            <a href="#"> <i class="fa fa-bars"></i></a>
+          </div>
+        </nav>
+        <div class="search">
+          <div class="d-flex search-box justify-content-center">
+            <form
+              class="d-flex justify-content-center"
+              action="search-result.html"
+            >
+              <div class="categories-button">
+                <p class="categories-button-p">
+                  <i class="fa fa-caret-down"></i> Categories
+                </p>
+                <div class="categories">
+                  <ul class="category-ul">
+                    <li class="category-li">
+                      <a class="category-link" href="#">Cars</a>
+                    </li>
+                    <li class="category-li">
+                      <a class="category-link" href="#">Dolls</a>
+                    </li>
+                    <li class="category-li">
+                      <a class="category-link" href="#">Creative</a>
+                    </li>
+                    <li class="category-li">
+                      <a class="category-link" href="#">Contructive</a>
+                    </li>
+                    <li class="category-li">
+                      <a class="category-link" href="#">Characters</a>
+                    </li>
+                    <li class="category-li">
+                      <a class="category-link" href="#">Scientific</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <input
+                class="ml-2 search-input"
+                type="text"
+                name="products"
+                placeholder="Search for products"
+              />
+              <input
+                class="ml-2 search-input"
+                type="text"
+                name="location"
+                placeholder="Location"
+              />
+              <button class="nav-button ml-2 px-3" type="submit">
+                <span><i class="fa fa-search"></i></span> Search
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Search Result section  -->
+        <section class="search-result-container">
+          <div class="filter border pl-2 pt-2">
+            <h4 class="filter-name">Imported From</h4>
+            <div class="filter-box">
+              <div class="filter-1">
+                <input type="checkbox" id="china" />
+                <label for="china">China</label>
+              </div>
+              <div class="filter-2">
+                <input type="checkbox" id="japan" />
+                <label for="japan">Japan</label>
+              </div>
+              <div class="filter-3">
+                <input type="checkbox" id="indonesia" />
+                <label for="indonesia">Indonesia</label>
+              </div>
+              <hr class="mx-4" />
+            </div>
+
+            <h4 class="filter-name">Price Range</h4>
+            <div class="filter-box">
+              <div class="filter-1">
+                <input type="checkbox" id="10$-100$" />
+                <label for="10$-100$">10$-100$</label>
+              </div>
+              <div class="filter-2">
+                <input type="checkbox" id="100$-300$" />
+                <label for="100$-300$">100$-300$</label>
+              </div>
+              <div class="filter-3">
+                <input type="checkbox" id="301$-1000$" />
+                <label for="301$-1000$">301$-1000$</label>
+              </div>
+              <hr class="mx-4" />
+            </div>
+
+            <h4 class="filter-name">Age</h4>
+            <div class="filter-box">
+              <div class="filter-1">
+                <input type="checkbox" id="1year" />
+                <label for="1year">1 year - 2 years</label>
+              </div>
+              <div class="filter-2">
+                <input type="checkbox" id="2year" />
+                <label for="2year">2 year - 5 years</label>
+              </div>
+              <div class="filter-3">
+                <input type="checkbox" id="6year" />
+                <label for="6year">6 year - 10 years</label>
+              </div>
+              <div class="filter-4">
+                <input type="checkbox" id="11year" />
+                <label for="11year">11 year - 20 years</label>
+              </div>
+              <hr class="mx-4" />
+            </div>
+          </div>
+          <div class="results border">
+            <div class="search-query p-2">
+              <h1 class="search-query-paragraph">
+                About 50 search results for "Dolls" (0.62 seconds)
+              </h1>
+            </div>
+            <div class="search-products p-2">
+              <div class="image">
+                <a href="#"
+                  ><img class="img w-100" src="images/dolls-1.jpg" alt="#"
+                /></a>
+              </div>
+              <div class="text">
+                <a href="#" class="h2 product-name">Barbie Doll</a>
+                <h5 class="my-4 imported">Imported from Indonesia</h5>
+                <p>
+                  Doll is a model of a human, often used as a toy for children,
+                  and an artistic hobby for adults. Dolls have also been used in
+                  traditional religious rituals throughout the world. They have
+                  been made as crude, rudimentary playthings as well as
+                  elaborate art.
+                </p>
+                <div
+                  class="cart-box d-flex justify-content-between align-items-center"
+                >
+                  <h4 class="price">35$</h4>
+                  <button class="nav-button font-weight-bold" type="submit">
+                    <span>
+                      <i class="fa fa-shopping-cart text-white nav-icons"></i
+                    ></span>
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <hr class="mx-4" />
+
+            <div class="search-products p-2">
+              <div class="image">
+                <a href="#"
+                  ><img class="img w-100" src="images/dolls-2.jpg" alt="#"
+                /></a>
+              </div>
+              <div class="text">
+                <a href="#" class="h2 product-name">Barbie Doll</a>
+                <h5 class="my-4 imported">Imported from Indonesia</h5>
+                <p>
+                  Doll is a model of a human, often used as a toy for children,
+                  and an artistic hobby for adults. Dolls have also been used in
+                  traditional religious rituals throughout the world. They have
+                  been made as crude, rudimentary playthings as well as
+                  elaborate art.
+                </p>
+                <div
+                  class="cart-box d-flex justify-content-between align-items-center"
+                >
+                  <h4 class="price">35$</h4>
+                  <button class="nav-button font-weight-bold" type="submit">
+                    <span>
+                      <i class="fa fa-shopping-cart text-white nav-icons"></i
+                    ></span>
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <hr class="mx-4" />
+
+            <div class="search-products p-2">
+              <div class="image">
+                <a href="#"
+                  ><img class="img w-100" src="images/dolls-3.jpg" alt="#"
+                /></a>
+              </div>
+              <div class="text">
+                <a href="#" class="h2 product-name">Barbie Doll</a>
+                <h5 class="my-4 imported">Imported from Indonesia</h5>
+                <p>
+                  Doll is a model of a human, often used as a toy for children,
+                  and an artistic hobby for adults. Dolls have also been used in
+                  traditional religious rituals throughout the world. They have
+                  been made as crude, rudimentary playthings as well as
+                  elaborate art.
+                </p>
+                <div
+                  class="cart-box d-flex justify-content-between align-items-center"
+                >
+                  <h4 class="price">35$</h4>
+                  <button class="nav-button font-weight-bold" type="submit">
+                    <span>
+                      <i class="fa fa-shopping-cart text-white nav-icons"></i
+                    ></span>
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <hr class="mx-4" />
+
+            <div class="search-products p-2">
+              <div class="image">
+                <a href="#"
+                  ><img class="img w-100" src="images/dolls-4.jpg" alt="#"
+                /></a>
+              </div>
+              <div class="text">
+                <a href="#" class="h2 product-name">Barbie Doll</a>
+                <h5 class="my-4 imported">Imported from Indonesia</h5>
+                <p>
+                  Doll is a model of a human, often used as a toy for children,
+                  and an artistic hobby for adults. Dolls have also been used in
+                  traditional religious rituals throughout the world. They have
+                  been made as crude, rudimentary playthings as well as
+                  elaborate art.
+                </p>
+                <div
+                  class="cart-box d-flex justify-content-between align-items-center"
+                >
+                  <h4 class="price">35$</h4>
+                  <button class="nav-button font-weight-bold" type="submit">
+                    <span>
+                      <i class="fa fa-shopping-cart text-white nav-icons"></i
+                    ></span>
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="pagination d-flex justify-content-center flex-wrap align-items-center"
+            >
+              <a href="#"><i class="fa fa-angle-double-left pt-3"></i></a>
+              <a href="#" class="pagination-text">1</a>
+              <a href="#" class="pagination-text">2</a>
+              <a href="#" class="pagination-text">3</a>
+              <a href="#" class="pagination-text">4</a>
+              <a href="#" class="pagination-text">5</a>
+              <a href="#" class="pagination-text">6</a>
+              <a href="#" class="pagination-text">7</a>
+              <a href="#" class="pagination-text">8</a>
+              <a href="#" class="pagination-text">9</a>
+              <a href="#" class="pagination-text">10</a>
+              <a href="#"><i class="fa fa-angle-double-right pt-3"></i></a>
+            </div>
+          </div>
+        </section>
+        <hr class="mx-4" />
+        <footer>
+          <div class="footer-navigation px-4 mt-3 pt-3">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <a href="#"
+                ><img class="footer-logo" src="images/logo.jpeg" alt="#"
+              /></a>
+              <p class="text-left pt-2 footer-paragraph">
+                A toy is an item that is used in play, especially one designed
+                for such use. Playing with toys can be an enjoyable means of
+                training young children for life in society.
+              </p>
+            </div>
+            <div>
+              <h5 class="footer-navigation-title">Categories</h5>
+              <hr class="footer-hr" />
+              <div class="footer-naviagtion-grid">
+                <div class="help">
+                  <ul class="footer-ul">
+                    <li class="footer-li d-flex flex-column">
+                      <a href="#" class="footer-li-link">FAQ</a>
+                      <a href="#" class="footer-li-link">Newsletter</a>
+                      <a href="#" class="footer-li-link">Contact Us</a>
+                      <a href="#" class="footer-li-link">Contact Us</a>
+                      <a href="#" class="footer-li-link">Jobs Opputunities</a>
+                      <a href="#" class="footer-li-link">Privacy Policy</a>
+                      <a href="#" class="footer-li-link">Terms & Conditions</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="help">
+                  <ul class="footer-ul">
+                    <li class="footer-li d-flex flex-column">
+                      <a href="#" class="footer-li-link"
+                        ><i class="fab fa-facebook-square"></i>&nbsp;
+                        Facebook</a
+                      >
+                      <a href="#" class="footer-li-link"
+                        ><i class="fab fa-twitter-square"></i>&nbsp; Twitter</a
+                      >
+                      <a href="#" class="footer-li-link"
+                        ><i class="fab fa-linkedin"></i>&nbsp; Linkedin</a
+                      >
+                      <a href="#" class="footer-li-link"
+                        ><i class="fab fa-github-square"></i>&nbsp; Github</a
+                      >
+                      <a href="#" class="footer-li-link"
+                        ><i class="fab fa-instagram-square"></i>&nbsp;
+                        Instagram</a
+                      >
+                      <a href="#" class="footer-li-link"
+                        ><i class="fab fa-tumblr-square"></i>&nbsp; Tumbler</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="mx-4" />
+          <div class="footer copyright text-center">
+            Copyright @ 2020. All rights reserved by Muhammad-Tech.
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
