@@ -28,7 +28,7 @@
 
 @font-face {
   font-family: "Gotham Light";
-  src: 
+  src:
     url("../fonts/GothamRounded-Light.woff2") format("woff2"),
     url("../fonts/GothamRounded-Light.woff") format("woff");
 }
@@ -125,18 +125,8 @@ header {
   font-weight: bold;
 }
 
-.nav-button:hover{
+.nav-button:hover {
   background-color: #a7404f;
-}
-
-.search {
-  height: 400px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 25px;
-  background: url("../images/search-bg.jpeg") no-repeat scroll center;
-  background-size: cover;
 }
 
 .search-input {
@@ -210,7 +200,7 @@ header {
 
 .products-category {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   row-gap: 0.5rem;
   column-gap: 0.5rem;
   padding: 0 20px;
@@ -223,7 +213,6 @@ header {
 
 .fa-user-astronaut,
 .fa-car-side {
-  color: #888;
   font-size: 20px;
 }
 
@@ -469,6 +458,26 @@ header {
   font-weight: bold;
 }
 
+.search {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .products-category {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .search {
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 25px;
+    background: url("../images/search-bg.jpeg") no-repeat scroll center;
+    background-size: cover;
+  }
+}
+
 @media (min-width: 768px) {
   .main-links {
     display: flex;
@@ -503,15 +512,10 @@ header {
 
   .products-category {
     display: grid;
-    grid-template-columns: 0.5fr 6fr 6fr 6fr 6fr 0.5fr;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 0.5rem;
     column-gap: 0.5rem;
     padding: 0 20px;
-  }
-
-  .products-sidebar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .slider-container {
@@ -566,6 +570,16 @@ header {
 
   .main-email {
     display: flex;
+  }
+
+  .products-sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .products-category {
+    grid-template-columns: 0.5fr 6fr 6fr 6fr 6fr 0.5fr;
   }
 
   .profile-image {

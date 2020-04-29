@@ -2,13 +2,30 @@
 
 > Capstone Project. This is a project based on a Glance design . For this project ive to create an online shop for the products of our own choice. So, I've created a website for Toys online shop. In this project I used all the previous knowledge like bootstrap, flex box, grid, float, position. ive also used the bakground image for search section. This website is responsive.
 
-![screenshot](./tos-1.png)
-![screenshot](./tos-2.png)
-![screenshot](./tos-3.png)
-![screenshot](./tos-4.png)
-![screenshot](./tos-5.png)
-![screenshot](./tos-6.png)
-![screenshot](./tos-7.png)
+# Mobile Devives
+
+![screenshot](./readme/mobile-toys-1.png)
+![screenshot](./readme/mobile-toys-2.png)
+![screenshot](./readme/mobile-toys-3.png)
+![screenshot](./readme/mobile-toys-4.png)
+![screenshot](./readme/mobile-toys-5.png)
+![screenshot](./readme/mobile-toys-6.png)
+![screenshot](./readme/mobile-toys-7.png)
+
+# Medium Devices
+
+![screenshot](./readme/medium-toys-1.png)
+![screenshot](./readme/medium-toys-2.png)
+![screenshot](./readme/medium-toys-3.png)
+
+# Large Devices
+![screenshot](./readme/large-toys-1.png)
+![screenshot](./readme/large-toys-2.png)
+![screenshot](./readme/large-toys-3.png)
+![screenshot](./readme/large-toys-4.png)
+![screenshot](./readme/large-toys-5.png)
+
+
 
 Additional description about the project and its features.
 - A sticky navbar
