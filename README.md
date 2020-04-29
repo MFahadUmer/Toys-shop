@@ -84,4 +84,3 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Special thanks to [Microverse] (microverse.org) who help me to complete this design and also to [Muhammad Awad] (https://www.behance.net) whose design i've used.
-- etc
